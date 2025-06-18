@@ -1,0 +1,35 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e3f2fd;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)" />
+  
+  <!-- Main workflow icon -->
+  <circle cx="300" cy="160" r="40" fill="#6366f1" opacity="0.1"/>
+  <path d="M280 140 h40 v40 h-40 z" fill="#6366f1" opacity="0.8"/>
+  <path d="M290 150 h20 v4 h-20 z M290 158 h20 v4 h-20 z M290 166 h15 v4 h-15 z" fill="white"/>
+  
+  <!-- Connection lines -->
+  <line x1="150" y1="200" x2="250" y2="180" stroke="#6366f1" stroke-width="2" opacity="0.6"/>
+  <line x1="350" y1="180" x2="450" y2="200" stroke="#6366f1" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Integration nodes -->
+  <circle cx="150" cy="200" r="20" fill="#10b981" opacity="0.2"/>
+  <text x="150" y="205" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#10b981">CRM</text>
+  
+  <circle cx="450" cy="200" r="20" fill="#f59e0b" opacity="0.2"/>
+  <text x="450" y="205" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#f59e0b">Email</text>
+  
+  <!-- Title -->
+  <text x="300" y="280" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#1f2937">Customer Onboarding</text>
+  <text x="300" y="300" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#6b7280">N8N Workflow</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="3" fill="#6366f1" opacity="0.3"/>
+  <circle cx="500" cy="120" r="2" fill="#10b981" opacity="0.4"/>
+  <circle cx="80" cy="300" r="2" fill="#f59e0b" opacity="0.3"/>
+  <circle cx="520" cy="320" r="3" fill="#8b5cf6" opacity="0.3"/>
+</svg>

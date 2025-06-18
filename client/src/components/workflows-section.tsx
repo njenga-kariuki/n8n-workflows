@@ -1,4 +1,4 @@
-import { workflows } from '../data/workflows.js';
+import { workflows } from '../../../data/workflows.js';
 import WorkflowCard from './workflow-card';
 
 export default function WorkflowsSection() {
