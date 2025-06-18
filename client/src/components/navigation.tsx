@@ -38,7 +38,6 @@ export default function Navigation() {
             <button onClick={() => scrollToSection('hero')} className="text-gray-600 hover:text-primary transition-colors">Home</button>
             <button onClick={() => scrollToSection('workflows')} className="text-gray-600 hover:text-primary transition-colors">Workflows</button>
             <button onClick={() => scrollToSection('about')} className="text-gray-600 hover:text-primary transition-colors">About</button>
-            <button onClick={() => scrollToSection('contact')} className="text-gray-600 hover:text-primary transition-colors">Contact</button>
           </div>
           
           <div className="flex items-center space-x-4">
@@ -68,7 +67,6 @@ export default function Navigation() {
               <button onClick={() => scrollToSection('hero')} className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors w-full text-left">Home</button>
               <button onClick={() => scrollToSection('workflows')} className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors w-full text-left">Workflows</button>
               <button onClick={() => scrollToSection('about')} className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors w-full text-left">About</button>
-              <button onClick={() => scrollToSection('contact')} className="block px-3 py-2 text-gray-600 hover:text-primary transition-colors w-full text-left">Contact</button>
             </div>
           </div>
         )}

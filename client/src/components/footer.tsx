@@ -1,4 +1,4 @@
-import { Settings, Mail } from 'lucide-react';
+import { Settings } from 'lucide-react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function Footer() {
@@ -23,9 +23,6 @@ export default function Footer() {
               className="text-gray-400 hover:text-primary transition-colors"
             >
               <FaLinkedin className="text-xl" />
-            </a>
-            <a href="mailto:contact@example.com" className="text-gray-400 hover:text-primary transition-colors">
-              <Mail className="text-xl" />
             </a>
             <a href="#" className="text-gray-400 hover:text-primary transition-colors">
               <FaGithub className="text-xl" />

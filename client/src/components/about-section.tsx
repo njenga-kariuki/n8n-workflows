@@ -1,4 +1,4 @@
-import { Settings, BarChart3, Mail } from 'lucide-react';
+import { Settings, BarChart3 } from 'lucide-react';
 import { FaLinkedin } from 'react-icons/fa';
 
 export default function AboutSection() {
@@ -28,7 +28,7 @@ export default function AboutSection() {
           </div>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex justify-center">
           <a 
             href="https://www.linkedin.com/in/njengakariuki/" 
             target="_blank" 
@@ -37,13 +37,6 @@ export default function AboutSection() {
           >
             <FaLinkedin className="mr-2" />
             View LinkedIn Profile
-          </a>
-          <a 
-            href="mailto:contact@example.com" 
-            className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-primary hover:text-primary transition-all inline-flex items-center justify-center"
-          >
-            <Mail className="mr-2 w-5 h-5" />
-            Get in Touch
           </a>
         </div>
       </div>
