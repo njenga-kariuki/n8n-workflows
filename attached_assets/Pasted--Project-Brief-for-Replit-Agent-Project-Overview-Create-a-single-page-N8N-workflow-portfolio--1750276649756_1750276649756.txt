@@ -1,0 +1,95 @@
+## Project Brief for Replit Agent
+
+### Project Overview
+Create a single-page N8N workflow portfolio showcase with modern design inspired by Linear/Notion/Figma aesthetics. This will be a clean, scrollable gallery of workflow automations with descriptions and visuals.
+
+### Technical Requirements
+- **Framework:** Next.js with React
+- **Styling:** Tailwind CSS for design system
+- **Structure:** Single-page application with smooth scrolling sections
+- **Responsive:** Mobile-first design approach
+
+### Design Specifications
+**Visual Style:**
+- Minimalist design with generous whitespace
+- Neutral color palette (grays) with single accent color
+- Typography: Inter or similar modern sans-serif
+- Card-based layout for workflow showcase
+
+**Layout Structure:**
+1. Hero section with header and subheader (see content below)
+2. Scrollable workflows gallery (main content)
+3. Brief about section with LinkedIn link
+4. Simple contact/connect section
+
+### Specific Content Requirements
+**Header Text:** "J's N8N Workflow Examples"
+**Subheader Text:** "Examples of N8N workflows to showcase automation toolkit"
+**LinkedIn Link:** https://www.linkedin.com/in/njengakariuki/
+
+### Data Structure Implementation
+**Create `/data/workflows.js` with this exact structure:**
+```javascript
+export const workflows = [
+  {
+    id: 1,
+    title: "Customer Onboarding Automation",
+    category: "CRM",
+    description: "Automated welcome sequence that triggers when new customers sign up, sends personalized emails, creates tasks in project management tools, and notifies the sales team.",
+    problem: "Manual onboarding was taking 2+ hours per customer and prone to human error",
+    integrations: ["Slack", "Gmail", "Airtable", "Calendly"],
+    image: "/images/workflows/onboarding-workflow.png",
+    impact: "Reduced onboarding time by 85%, improved customer satisfaction"
+  },
+  {
+    id: 2,
+    title: "Social Media Content Pipeline",
+    category: "Marketing",
+    description: "Automatically schedules social media posts across platforms when new blog content is published, generates relevant hashtags, and tracks engagement metrics.",
+    problem: "Content distribution was inconsistent and time-consuming across multiple platforms",
+    integrations: ["WordPress", "Twitter API", "LinkedIn", "Buffer", "Google Sheets"],
+    image: "/images/workflows/social-media-workflow.png",
+    impact: "Increased posting consistency by 300%, saved 10 hours/week"
+  },
+  {
+    id: 3,
+    title: "Lead Qualification System",
+    category: "Sales",
+    description: "Automatically scores and routes incoming leads based on company size, industry, and engagement level, then assigns to appropriate sales rep.",
+    problem: "Sales team was spending too much time on unqualified leads",
+    integrations: ["HubSpot", "Clearbit", "Slack", "Gmail"],
+    image: "/images/workflows/lead-qualification-workflow.png",
+    impact: "Improved lead quality by 60%, reduced qualification time by 70%"
+  }
+];
+```
+
+### Image Handling Instructions
+**Image Setup:**
+- Create `/public/images/workflows/` directory
+- For now, use placeholder images (600x400px) for each workflow
+- Generate placeholder images with workflow titles as text overlays
+- Use a consistent aspect ratio (3:2) for all workflow images
+- Images should be optimized and under 200KB each
+
+**Placeholder Image Creation:**
+- Use a tool to create simple placeholder images with the workflow title
+- Background: Light gray (#f8f9fa) with dark text
+- Include "N8N Workflow" subtitle on each placeholder
+- Example filenames: `onboarding-workflow.png`, `social-media-workflow.png`, `lead-qualification-workflow.png`
+
+### Functional Requirements
+- Smooth scroll navigation
+- Hover effects on workflow cards that show additional details
+- Mobile responsive grid layout (1 column mobile, 2 columns tablet, 3 columns desktop)
+- Fast loading with Next.js Image optimization
+- Each workflow card should display: image, title, category tag, description, key integrations, and impact metric
+- LinkedIn link should open in new tab
+
+### Content Management Approach
+- All workflow data imported from `/data/workflows.js`
+- Page automatically maps through workflows array to generate cards
+- Easy to add new workflows by adding objects to the array
+- No code changes needed for content updates
+
+This gives the coding agent everything they need to build the structure correctly with your specific branding and provides you with clear examples for future updates.
