@@ -6,7 +6,7 @@ export const workflows = [
     description: "Automated welcome sequence that triggers when new customers sign up, sends personalized emails, creates tasks in project management tools, and notifies the sales team.",
     problem: "Manual onboarding was taking 2+ hours per customer and prone to human error",
     integrations: ["Slack", "Gmail", "Airtable", "Calendly"],
-    image: "/images/workflows/onboarding-workflow.png",
+    image: "/images/workflows/onboarding-workflow.svg",
     impact: "Reduced onboarding time by 85%, improved customer satisfaction"
   },
   {
@@ -16,7 +16,7 @@ export const workflows = [
     description: "Automatically schedules social media posts across platforms when new blog content is published, generates relevant hashtags, and tracks engagement metrics.",
     problem: "Content distribution was inconsistent and time-consuming across multiple platforms",
     integrations: ["WordPress", "Twitter API", "LinkedIn", "Buffer", "Google Sheets"],
-    image: "/images/workflows/social-media-workflow.png",
+    image: "/images/workflows/social-media-workflow.svg",
     impact: "Increased posting consistency by 300%, saved 10 hours/week"
   },
   {
@@ -26,7 +26,7 @@ export const workflows = [
     description: "Automatically scores and routes incoming leads based on company size, industry, and engagement level, then assigns to appropriate sales rep.",
     problem: "Sales team was spending too much time on unqualified leads",
     integrations: ["HubSpot", "Clearbit", "Slack", "Gmail"],
-    image: "/images/workflows/lead-qualification-workflow.png",
+    image: "/images/workflows/lead-qualification-workflow.svg",
     impact: "Improved lead quality by 60%, reduced qualification time by 70%"
   }
 ];

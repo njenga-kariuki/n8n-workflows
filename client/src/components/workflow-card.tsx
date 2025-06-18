@@ -42,13 +42,13 @@ export default function WorkflowCard({ workflow }: WorkflowCardProps) {
   return (
     <div className="workflow-card bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
       <div className="relative overflow-hidden">
-        {/* Placeholder image with workflow visualization */}
-        <div className={`${gradientClass} h-48 flex items-center justify-center relative`}>
-          <div className="text-center p-6">
-            <IconComponent className="text-4xl text-primary mb-3 mx-auto" />
-            <h3 className="font-semibold text-gray-800">{workflow.title.split(' ')[0]} {workflow.title.split(' ')[1]}</h3>
-            <p className="text-sm text-gray-600">N8N Workflow</p>
-          </div>
+        {/* Workflow image */}
+        <div className="h-48 relative">
+          <img 
+            src={workflow.image} 
+            alt={workflow.title}
+            className="w-full h-full object-cover"
+          />
           <div className="absolute top-3 right-3">
             <span className={`${categoryColorClass} text-xs font-medium px-2.5 py-1 rounded-full`}>
               {workflow.category}
