@@ -15,24 +15,24 @@
   --card-foreground: hsl(20, 14.3%, 4.1%);
   --border: hsl(20, 5.9%, 90%);
   --input: hsl(20, 5.9%, 90%);
-  --primary: hsl(245, 85%, 66%);
-  --primary-dark: hsl(245, 85%, 56%);
-  --primary-foreground: hsl(211, 100%, 99%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-dark: hsl(217, 91%, 50%);
+  --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(60, 4.8%, 95.9%);
   --secondary-foreground: hsl(24, 9.8%, 10%);
-  --accent: hsl(60, 4.8%, 95.9%);
-  --accent-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(148, 76%, 40%);
+  --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(60, 9.1%, 97.8%);
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
   
-  /* Custom colors matching the design */
-  --gray-50: hsl(0, 0%, 98%);
-  --gray-100: hsl(214, 32%, 91%);
-  --gray-200: hsl(213, 27%, 84%);
-  --gray-300: hsl(211, 25%, 74%);
-  --gray-400: hsl(212, 14%, 64%);
+  /* Simplified color palette */
+  --gray-50: hsl(210, 40%, 98%);
+  --gray-100: hsl(210, 40%, 96%);
+  --gray-200: hsl(214, 32%, 91%);
+  --gray-300: hsl(213, 27%, 84%);
+  --gray-400: hsl(215, 20%, 65%);
   --gray-500: hsl(215, 16%, 47%);
   --gray-600: hsl(215, 19%, 35%);
   --gray-700: hsl(215, 25%, 27%);
@@ -51,13 +51,13 @@
   --card-foreground: hsl(0, 0%, 98%);
   --border: hsl(240, 3.7%, 15.9%);
   --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(245, 85%, 66%);
-  --primary-dark: hsl(245, 85%, 56%);
-  --primary-foreground: hsl(211, 100%, 99%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-dark: hsl(217, 91%, 50%);
+  --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(240, 3.7%, 15.9%);
   --secondary-foreground: hsl(0, 0%, 98%);
-  --accent: hsl(240, 3.7%, 15.9%);
-  --accent-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(148, 76%, 40%);
+  --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 62.8%, 30.6%);
   --destructive-foreground: hsl(0, 0%, 98%);
   --ring: hsl(240, 4.9%, 83.9%);
@@ -110,54 +110,5 @@
   
   .hover\:border-primary:hover {
     border-color: var(--primary);
-  }
-  
-  .gradient-overlay {
-    background: linear-gradient(135deg, var(--gray-50) 0%, hsl(214, 32%, 96%) 100%);
-  }
-  
-  .workflow-card {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .workflow-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  }
-  
-  .integration-badge {
-    transition: all 0.2s ease;
-  }
-  
-  .integration-badge:hover {
-    transform: scale(1.05);
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes slideUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .animate-fade-in {
-    animation: fadeIn 0.8s ease-out;
-  }
-  
-  .animate-slide-up {
-    animation: slideUp 0.8s ease-out;
   }
 }
