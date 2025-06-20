@@ -11,7 +11,7 @@ export default function AboutSection() {
           className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
         >
           <FaLinkedin className="mr-2" />
-          Connect on LinkedIn
+          Njenga's LinkedIn
         </a>
       </div>
     </section>

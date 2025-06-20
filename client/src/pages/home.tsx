@@ -1,7 +1,6 @@
 import HeroSection from '../components/hero-section';
 import WorkflowsSection from '../components/workflows-section';
 import AboutSection from '../components/about-section';
-import Footer from '../components/footer';
 
 export default function Home() {
   return (
@@ -9,7 +8,6 @@ export default function Home() {
       <HeroSection />
       <WorkflowsSection />
       <AboutSection />
-      <Footer />
     </div>
   );
 }
